@@ -154,7 +154,7 @@ Authorization: eyJhbGciOiJIUznR5cCI6IkpXVCJ9.eyJhY2Nlc3NJRCI6IjNlOTA1ZmEyLWNFjMy
 ```
     
 </details>
-Пример запроса:
+<details><summary>Пример запроса:</summary>
 
 ```json
 POST https://suppliers-api.wildberries.ru/card/create
@@ -266,6 +266,9 @@ Authorization: {{token}}
 }
 ```
 
+</details>
+    
+    
 Ответ:
 
 ```json
@@ -276,7 +279,9 @@ Authorization: {{token}}
 
 `https://suppliers-api.wildberries.ru/card/batchCreate` **Описание**: метод позволяет создавать сразу много карточек.
 
-Тело запроса выглядит следующим образом:
+
+
+<details><summary>Тело запроса выглядит следующим образом:</summary>
 
 ```json
 POST https://suppliers-api.wildberries.ru/card/batchCreate
@@ -390,6 +395,7 @@ Authorization: {{token}}
 }
 ```
 
+</details>
 Ответ:
 
 ```json
@@ -452,7 +458,8 @@ Authorization: {{token}}
         }
 }
 ```
-Ответ:
+
+<details><summary>Ответ:</summary>
 
 ```json
 {
@@ -571,6 +578,7 @@ Authorization: {{token}}
 }
 ```
 
+</details>
 
 ### Обновление карточки.
 
@@ -579,7 +587,9 @@ Authorization: {{token}}
 **Описание**: метод позволяет обновить одну карточку товара.
 
 Для того чтобы обновить карточку предпочтительнее, запросить её из сервиса методом  `/card/cardByImtID` и в уже полученной структуре менять поля.
-Пример тела для обновление карточки:
+
+
+<details><summary>Пример тела для обновление карточки:</summary>
 
 ```json
 {
@@ -709,6 +719,8 @@ Authorization: {{token}}
   "id": "e7ba66f5-bdde-48b5-9e14-ea6a285bf57"
 }
 ```
+    
+</details>
 
 Ответ:
 
@@ -792,7 +804,8 @@ Authorization: {{token}}
 
 В результате вышеприведённого запроса нам вернутся все карточки поставщика `00000000-0000-0000-0000-000000000000`, среди которых не будет карточек с красными цветами и джинс, у всех карточек будут товары с размером “M”. И все эти карточки будут отсортированы по дате создания в порядке возрастания (сначала старые).
 
-#### Поля доступные поля для использования в "find"
+
+<details><summary>Поля доступные поля для использования в "find":</summary>
 
 ```json
 {
@@ -835,9 +848,11 @@ Authorization: {{token}}
     "search": "Кофе молотый" // значение типа string или массив значений ["Кофе молотый","Носки"]
 }
 ```
+</details>
 
 
-Пример запроса:
+<details><summary>Пример запроса:</summary>
+
 ```json
 POST https://suppliers-api.wildberries.ru/card/list
 Content-Type: application/json
@@ -860,7 +875,11 @@ Authorization: {{token}}
   }
 }
 ```
-Ответ
+    
+</details>
+
+<details><summary>Ответ</summary>
+
 ```json
 {
   "id": "11",
@@ -1002,7 +1021,7 @@ Authorization: {{token}}
   }
 }
 ```
-
+</details>
 
 ### Генерация ШК для карточки.
 
@@ -1079,6 +1098,8 @@ $ curl -X POST --location "https://suppliers-api.wildberries.ru/upload/file/mult
 Для добавления файла надо создать или обновить карточку товара
 
 Create. https://suppliers-api.wildberries.ru/card/create
+
+<details><summary>Запрос</summary>
 
 ```json
 {
@@ -1186,6 +1207,8 @@ Create. https://suppliers-api.wildberries.ru/card/create
   }
 }
 ```
+
+</details>
 
 После синхронизаций с системами фото удаляется из хранилища и перемещается на CDN в связи с этим меняется секция:
 
