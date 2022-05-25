@@ -64,6 +64,7 @@ Authorization: eyJhbGciOiJIUznR5cCI6IkpXVCJ9.eyJhY2Nlc3NJRCI6IjNlOTA1ZmEyLWNFjMy
 
 
 <details><summary>Тело запроса выглядит следующим образом:</summary>
+    
 ```json
    {
         // Идентификатор отправляемого запроса. Служит для сопоставления ответа отправленному запросу. Необходимо генерировать уникальные идентификаторы для каждого запроса. Во избежание пересечений с другими поставщиками, рекомендуется избегать простых идентификаторов, таких как 1, 2, 3 и т.д.
@@ -151,6 +152,7 @@ Authorization: eyJhbGciOiJIUznR5cCI6IkpXVCJ9.eyJhY2Nlc3NJRCI6IjNlOTA1ZmEyLWNFjMy
         }
     }
 ```
+    
 </details>
 Пример запроса:
 
