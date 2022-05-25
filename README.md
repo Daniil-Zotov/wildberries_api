@@ -1245,7 +1245,12 @@ Create. https://suppliers-api.wildberries.ru/card/create
 
 Create. https://suppliers-api.wildberries.ru/card/create
 
+
+
 Для добавления медиафайла со стороннего ресурса необходимо добавить в номенклатуру
+
+<details><summary>Пример</summary>
+    
 ```bigquery
 "addin": [
     {
@@ -1381,6 +1386,8 @@ Create. https://suppliers-api.wildberries.ru/card/create
 }
 ```
 
+    
+</details>
 # Сервис конфигурации предметов и характеристик объекта.
 
 Требуется для того чтобы сконфигурировать карточку товара
@@ -1462,6 +1469,8 @@ Authorization: {{token}}
 
 Пример получения значения из справочника `"/options"`, для получения данных следует выполнить GET запрос: `https://suppliers-api.wildberries.ru/api/v1/directory/options?pattern=Ширина&top=10` Как и в случае с категориями товаров, из ответа данного запроса требуется извлечь поля `translate` и использовать для создания карточки.
 
+<details><summary>Полный пример создания карточки с учётом всех справочников:</summary>
+
 ```json
 {
   "additionalErrors": null,
@@ -1511,10 +1520,14 @@ Authorization: {{token}}
   "errorText": ""
 }
 ```
+    
+</details>
 
 ### Получение всех данных справочника
 
 Пример получения значения из справочника `"/options"`, для получения данных следует выполнить GET запрос: `https://suppliers-api.wildberries.ru/api/v1/directory/options?lang=ru&top=10`
+
+<details><summary>Полный пример создания карточки с учётом всех справочников:</summary>
 
 ```json
 {
@@ -1561,9 +1574,10 @@ Authorization: {{token}}
   "errorText": ""
 }
 ```
+    
+</details>
 
-# Полный пример создания карточки с учётом всех справочников
-
+<details><summary>Полный пример создания карточки с учётом всех справочников:</summary>
 ```json
 {
  "params": {
@@ -1707,3 +1721,5 @@ Authorization: {{token}}
  "id": "8a41f7a8-6ed1-4910-bbd3-ac83e214ec81"
 }
 ```
+
+</details>
