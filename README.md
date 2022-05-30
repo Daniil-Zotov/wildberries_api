@@ -4,6 +4,9 @@ Wildberries API 1.0.2 OAS3
 https://suppliers-api.wildberries.ru/swagger/index.html  
 Официальная документация (swagger)
 
+Реализация методов API Wildberries в сервисе Postman
+https://www.postman.com/bblkovo/workspace/wildberies/api/e04926ff-d77a-4bd5-95d0-d0f94d124ee6
+
 # Описание работы API Wildberries
 
 1. [Вступление](#intro)  
